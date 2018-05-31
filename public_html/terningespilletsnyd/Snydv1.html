@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Terningespillet Snyd v1</title>
+</head>
+
+
+<body>
+	<h1>Velkommen til terningespillet "Snyd" v1</h1>
+	
+	
+	<p>Terningespillet er et klassisk terningespil, hvor det ligesom i Meyer gælder om at gætte på kombinationer af terninger. <br>
+       Spillet spilles typisk af 2-5 spillere, hvor hver spiller starter med 6 terninger i hver af deres raflebærger. Runden starter ved, at alle ryster deres terninger og kigger på dem.<br>
+	   Spilleren skal  udfra sine terninger og alle andre terninger der er med i spillet vurdere, hvor mange af terningerne der mindst viser en bestemt værdi. <br>
+	   Spilleren kan så lave et gæt, hvor man gætter på hvor mange terninger der mindst viser en bestemt værdi.<br>
+	   Her kan reglerne om, hvordan man tæller terningerne op variere udfra hvem du spørger, men reglerne for vores java version af spillet er som følgende:<br><br>
+	   
+	   <span style="margin-left:2em">- Jokere: Terninger der viser '1' må tælles som joker og kan derfor bruges som en vilkårlig terning.<br></span>
+	   <span style="margin-left:2em">- Trappe reglen: Hvis man har terninger der viser fra 1 til antal terninger man har, så har man en "trappe". <br></span>
+	   <span style="margin-left:2.9em">Hvis man har en trappe og har x terninger må man tælle sine terninger som x+1 antal 1'ere. <br> <br></span><br>
+	    
+		Eksempel på trappe reglen:  Spiller 1 har følgende 5 terninger [1,2,3,4,5] og har derfor en trappe. Spiller 1 ved derfor at han selv har f.eks. 6 6'ere eller 6 2'ere. <br>
+		
+		Efter at Spiller 1 har gættet går turen videre til Spiller 2 og han kan nu to følgende ting: <br><br>
+		<span style="margin-left:2em">- Lave et gæt ligesom spiller 1, hvor han enten går en op på antal eller værdien.<br></span>
+	    <span style="margin-left:2em">- Kalde "Snyd" på Spiller 1 da han ikke tror på hans gæt.<br></span> <br>
+		
+		Runden slutter når en spiller der har turen kalder snyd på den forrige spiller. Når dette sker løfter alle spillere bærgerne og terningerne tælles op. <br>
+		Hvis der er det antal som der blev gættet på, taber ham der kaldte snyd og omvendt, hvis der ikke er det antal der blev gættet på taber ham der gætter. <br>
+		Alle andre end taberen kan nu fjerne en terning fra deres bærger og runden starter igen ved, at taberen af forrige runde starter. <br>
+		Spillet slutter når der kun er en spiller tilbage med terninger i raflebærgeret og han har så tabt spillet. <br><br>
+		
+		<a href="http://marksauer.dk/terningespilletsnyd/TerningSpillet_Snyd_Klient.jar">Hent klienten her!</a> <br>
+		<a href="http://marksauer.dk/terningespilletsnyd/TerningSpillet_Snyd_Server.jar">Hent serveren her!</a> <br> <br>
+		
+		Serveren skal køres fra terminalen da man skal angive port, antal spillere og terninger med tastaturet. Når man er i den mappe, hvor filen ligger i kan man bruge <br>
+		kommandoen "Java -jar TerningSpillet_Snyd_Server.jar" for at starte serveren. <br>
+		
+		v1 af Java projektet kan hentes via snapshotet <a href="https://github.com/ValarMarkhulis/TerningSpillet_Snyd/tree/ab28f1980f80f72c2c3d15e0b75dae4b3718bf5a">Github!</a> <br>
+		v2 af projektet kan ses på <a href="http://marksauer.dk/terningespilletsnyd/Snydv2.html">Marksauer.dk!</a> <br>
+		
+		
+	   </p>
+	<h5> Lavet af Mads og Christian </h5>
+
+</body>
+</html>
